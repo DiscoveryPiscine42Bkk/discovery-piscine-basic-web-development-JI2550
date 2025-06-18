@@ -1,0 +1,49 @@
+.header {
+    text-align: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px;
+    width: 200px;
+
+}
+.img {
+    width: 100%;
+    min-height: 100px;
+    background-image: url("p1.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name {
+    font-size: 24px;
+    padding: 10px;
+}
+.text {
+    font-size: 18px;
+    padding: 5px;
+}
+.contact {
+    background-color: black;
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+}
+.facebook {
+    width: 20px;
+    height: 20px;
+    background-image: url("facebook.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
