@@ -1,6 +1,9 @@
 .header {
     text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
+
 .box {
     display: flex;
     justify-content: center;
@@ -13,14 +16,14 @@
     align-items: center;
     box-shadow: 1px 1px 1px 1px;
     width: 200px;
-
+    border-radius: 5px;
 }
+
 .img {
     width: 100%;
-    min-height: 100px;
+    min-height: 200px;
     background-image: url("p1.avif");
     background-position: center;
-    background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -46,4 +49,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.ig {
+    width: 15px;
+    height: 15px;
+    background-image: url("ig.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social {
+    display: flex;
+    align-items: center;
 }
