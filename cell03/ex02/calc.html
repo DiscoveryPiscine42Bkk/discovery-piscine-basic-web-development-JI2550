@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>It's Over 9000</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    input, select {
+      margin: 5px;
+      padding: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="text" id="left" placeholder="Left operand">
+  <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+  </select>
+  <input type="text" id="right" placeholder="Right operand">
+  <input type="submit" value="Try me!" onclick="calculate()">
+
+  <script>
+    function isPositiveInteger(str) {
+      const num = Number(str);
+      return Number.isInteger(num) && num >= 0;
+    }
+
+    function calculate() {
+      const left = document.getElementById('left').value.trim();
+      const right = document.getElementById('right').value.trim();
+      const operator = document.getElementById('operator').value;
+
+      if (!isPositiveInteger(left) || !isPositiveInteger(right)) {
+        alert('Error :(');
+        return;
+      }
+
+      const a = parseInt(left);
+      const b = parseInt(right);
+
+      if ((operator === '/' || operator === '%') && b === 0) {
+        alert("It's over 9000!");
+        console.log("It's over 9000!");
+        return;
+      }
+
+      let result;
+      switch (operator) {
+        case '+': result = a + b; break;
+        case '-': result = a - b; break;
+        case '*': result = a * b; break;
+        case '/': result = a / b; break;
+        case '%': result = a % b; break;
+      }
+
+      alert('Result: ' + result);
+      console.log('Result: ' + result);
+    }
+
+    setInterval(() => {
+      alert("Please, use me...");
+    }, 30000);
+  </script>
+
+</body>
+</html>
