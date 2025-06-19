@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explode this balloon</title>
+  <link rel="stylesheet" href="balloon.css">
+</head>
+<body>
+
+<div id="balloon"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    const $balloon = $('#balloon');
+    const colors = ['red', 'green', 'blue'];
+    let size = 200;
+    let colorIndex = 0;
+
+    function updateBalloon() {
+      $balloon.css({
+        width: size + 'px',
+        height: size + 'px',
+        backgroundColor: colors[colorIndex]
+      });
+    }
+
+    $balloon.on('click', function () {
+      size += 10;
+      colorIndex = (colorIndex + 1) % colors.length;
+
+      if (size > 420) {
+        size = 200;
+        colorIndex = 0;
+      }
+
+      updateBalloon();
+    });
+
+    $balloon.on('mouseleave', function () {
+      if (size > 200) {
+        size -= 5;
+      }
+      colorIndex = (colorIndex - 1 + colors.length) % colors.length;
+      updateBalloon();
+    });
+
+    updateBalloon(); // Ensure initial styling is applied
+  });
+</script>
+
+
+</body>
+</html>
