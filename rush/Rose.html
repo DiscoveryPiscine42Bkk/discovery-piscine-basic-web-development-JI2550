@@ -6,21 +6,23 @@
   <title>แนะนำสมาชิก - Rose</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-     ul {
-    list-style: none; /* ลบจุด */
-    padding-left: 0;  /* ลบระยะห่างด้านซ้าย */
-  }
-
-  .text {
-    display: inline;
-  }
+    html {
+      scroll-behavior: smooth;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .text {
+      display: inline;
+    }
     body {
-  background-image: url('BG.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: black;
-  text-align: center;
+      background-image: url('BG.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      color: black;
+      text-align: center;
     }
     .profile-img {
       width: 250px;
@@ -33,76 +35,54 @@
 </head>
 <body>
 
-  <!-- 🔹 Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">RA. Team</a>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">หน้าหลัก</a></li>
-          <li class="nav-item"><a class="nav-link active" href="Rose.html">สมาชิก</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section1">รูปภาพทั่วไป</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section2">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section3">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- 🔹 Section 1: คณะ + สาขา + รูปภาพ -->
-  <section class="container mt-5 text-center">
-     <h2 class="fw-bold"><a href="https://siet.kmitl.ac.th/home">คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี</a></h2>
+  <section id="section1" class="container mt-5 text-center">
+    <h2 class="fw-bold"><a href="https://siet.kmitl.ac.th/home">คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี</a></h2>
     <p class="text-muted"><a href="https://siet.kmitl.ac.th/node/65">สาขา: การออกแบบสภาพแวดล้อมภายใน</a></p>
     <a href="https://www.instagram.com/rosehg.07/?next=%2F" target="_blank">
-  <img src="R.jpg" alt="Rose" class="profile-img mt-3">
-  </a>
-  </section>
-
-  <section class="container mt-5">
-  <h3>Rose's Resume</h3>
-  <p>
-    Name: Ms. Jidapa Sukdee<br>
-    School : King Mongkut's Institute of Technology Ladkraban
-    Faculty : School of industrial Education and technology<br>
-    Major :B.S.ind.Ed.intenor Environmental Design
-  </p>
-<h4 class="mt-4">About the branch</h4>
-<p>
-  Interior Design: Designing the interior or closed surveillance area to be aesthetically pleasing and functional according to the needs of the desired system and the use of the area.
-Aesthetic Design:
-Choosing materials, colors, furniture arrangements, and other elements to create an interesting atmosphere that is consistent with the desired style.
-Functional Design:
-Arranging room layouts, selecting appropriate furniture, and arranging systems such as lighting and air conditioning to make the area usable efficiently.
-Design to meet user needs:
-Taking into account the characteristics of the area's use, such as designing a kitchen for easy use, designing a work room for concentration.
-</p>
-</section>
-
-
- <section class="container mt-5 mb-5">
-  <h3>Contact channels</h3>
-  <ul>
-    <li>
-      Facebook: <a href="https://www.facebook.com/rosehg.07">Jidapha Sukdee</a>
-    </li>
-    <li>
-      Instagram: <a href="https://www.instagram.com/rosehg.07/?next=%2F">rosehg.07</a>
-    </li>
-    <li>
-      Instagram: <a href="https://www.instagram.com/smo.kharusart.kmitl/">smo.kharusart.kmitl</a>
-    </li>
-    <li>
-      <a href="https://siet.kmitl.ac.th/node/65" target="_blank">
-        เว็บไซต์คณะ: ค.อ.บ. การออกแบบสภาพแวดล้อมภายใน (5 ปี)
-      </a>
-    </li>
-  </ul>
-</section>
-  
-
-  
-
+      <img src="R.jpg" alt="Rose" class="profile-img mt-3">
     </a>
   </section>
 
-  <!-- 🔹 Bootstrap JS (optional for navbar toggle) -->
+  <section id="section2" class="container mt-5">
+    <h3>Rose's Resume</h3>
+    <p>
+      Name: Ms. Jidapa Sukdee<br>
+      School: King Mongkut's Institute of Technology Ladkraban<br>
+      Faculty: School of Industrial Education and Technology<br>
+      Major: B.S. in Ed. Interior Environmental Design
+    </p>
+    <h4 class="mt-4">About the branch</h4>
+    <p>
+      Interior Design: Designing the interior or enclosed area to be aesthetically pleasing and functional.<br>
+      Aesthetic Design: Choosing materials, colors, furniture arrangements, and elements to match the desired style.<br>
+      Functional Design: Layouts, lighting, and air conditioning for usability.<br>
+      User-Centered Design: Tailoring design for ease, focus, or specific use.
+    </p>
+  </section>
+
+  <section id="section3" class="container mt-5 mb-5">
+    <h3>Contact channels</h3>
+    <ul>
+      <li>Facebook: <a href="https://www.facebook.com/rosehg.07">Jidapha Sukdee</a></li>
+      <li>Instagram: <a href="https://www.instagram.com/rosehg.07/?next=%2F">rosehg.07</a></li>
+      <li>Instagram: <a href="https://www.instagram.com/smo.kharusart.kmitl/">smo.kharusart.kmitl</a></li>
+      <li><a href="https://siet.kmitl.ac.th/node/65" target="_blank">เว็บไซต์คณะ: ค.อ.บ. การออกแบบสภาพแวดล้อมภายใน (5 ปี)</a></li>
+    </ul>
+  </section>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
